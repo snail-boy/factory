@@ -12,7 +12,10 @@ on:
   push:
     branches:
       - 'master' # 只针对 dev 分支
-
+    paths:
+      - '.github/workflows/*'
+      - '**'
+      - 'Dockerfile'
 
 jobs:
   deploy:
